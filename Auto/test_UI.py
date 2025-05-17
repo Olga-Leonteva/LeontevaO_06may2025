@@ -56,8 +56,8 @@ def test_Cart(browser):
     with allure.step("Открыть браузер"):
         m_c = Sibdar_UI(browser)
 
-    with allure.step("Открыть корзину"):
+    with allure.step("Найти корзину"):
         text = m_c.search_cart()
 
-    with allure.step("Открыть корзину"):
+    with allure.step("Проверить значение"):
         assert text == ('пуста')
